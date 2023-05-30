@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Widis Medica</title>
+    <link rel="shortcut icon" href="GAMBAR/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+  />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script>// Fungsi untuk menerapkan efek fade-in pada elemen-elemen dengan kelas "col3"
+        function applyFadeInEffect() {
+          var col3Elements = document.querySelectorAll('.col3');
+          var windowHeight = window.innerHeight;
+        
+          col3Elements.forEach(function (element) {
+            var elementTop = element.getBoundingClientRect().top;
+            var elementBottom = element.getBoundingClientRect().bottom;
+        
+            // Memeriksa apakah elemen ada di dalam viewport
+            if (elementTop - windowHeight < 0) {
+              element.classList.add('fade-in');
+            }
+          });
+        }
+        
+        // Fungsi untuk memanggil applyFadeInEffect setelah halaman selesai dimuat
+        document.addEventListener('DOMContentLoaded', function () {
+          var facilityElement = document.querySelector('.facility');
+          facilityElement.classList.add('fade-in');
+          applyFadeInEffect();
+        });
+        
+        // Fungsi untuk menerapkan efek fade-in saat scrolling
+        window.addEventListener('scroll', applyFadeInEffect);
+        </script>
+  </head>
+  <body>
+        <!--HEADER-->
+        <header>
+            <a href="#" class="logo"
+              ><img src="GAMBAR/logologo.png"></i> WIDIS <span> MEDIKA </span></a
+            >
+      
+            <ul class="navbar">
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="fasilitas.html">Fasilitas</a></li>
+              <li><a href="informasi.html" class="active">Informasi</a></li>
+              <li><a href="jadwal.html">Jadwal</a></li>
+            </ul>
+      
+            <div class="main">
+              <a href="reservasi.html" class="user"><i class="ri-user-add-fill"></i>Reservasi</a>
+              <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+          </header>
+          <!--END HEADER-->
+    <!--INFORMASI-->
+    <div class="subjudul3"><h1>PAKET DAN PROMO</h1></div>
+    <div class="facility">
+        <div class="container">
+            <div class="row">
+                <div class="col4">
+                    <div class="facility-card">
+                        <a href="berita1.html">
+                        <div class="fc-image">
+                            <img src="GAMBAR/pbumil.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            
+                                <h3>Paket Ibu Hamil</h3>
+                                <p>Lihat selengkapnya</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="facility-card">
+                        <a href="berita2.html">
+                        <div class="fc-image">
+                            <img src="GAMBAR/plahir.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            
+                                <h3>Paket Setelah Melahirkan</h3>
+                                <p>Lihat selengkapnya</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="facility-card">
+                        <a href="berita3.html">
+                        <div class="fc-image">
+                            <img src="GAMBAR/pbaby.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            
+                                <h3>Paket Baby Treatment</h3>
+                                <p>Lihat selengkapnya</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="facility-card">
+                        <a href="berita4.html">
+                        <div class="fc-image">
+                            <img src="GAMBAR/phomecare.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            
+                                <h3>Paket Homecare Newborn</h3>
+                                <p>Lihat selengkapnya</p>
+                            
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="facility-card">
+                        <a href="berita5.html">
+                        <div class="fc-image">
+                            <img src="GAMBAR/pkids.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                                <h3>Paket Kids Treatment</h3>
+                                <p>Lihat selengkapnya</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="facility-card">
+                        <a href="berita6.html">
+                        <div class="fc-image">
+                            <img src="GAMBAR/mbktreatment.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                            <a href="berita6.html">
+                                <h3>Mom, Baby , and Kids Treatment</h3>
+                                <p>Lihat selengkapnya</p>
+                            
+                            </div>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--END INFORMASI-->
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col4">
+                    <div class="footer-desc">
+                        <h3>WIDIS <span>MEDICA</span></h3>
+                        <p>WIDIS MEDICA merupakan klinik ibu dan anak yang berlokasi di Depok</p>
+                    </div>
+                </div>
+                <div class="col4">
+                  <h3>Hubungi Kami </h3>
+                  <ul><li>
+                    <a href="https://wa.me/+6281211018706"><img src="GAMBAR/wa.png" alt="" height="32"></a>
+                  </li>
+                  </ul>
+                </div>
+                <div class="col4">
+                    <h3>Ikuti Kami</h3>
+                    <a href="https://www.instagram.com/widis_medica/"><img src="GAMBAR/ig.png" alt="" height="32"></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="col12">
+          <div class="copyright"><p>&copy; 2023 WIDIS MEDICA</p>
+          </div>
+        </div>
+    </div>
+    <!-- js link -->
+    <script type="text/javascript" src="script.js"></script>
+    <!--END FOOTER-->
+      </body>
+    </html>
